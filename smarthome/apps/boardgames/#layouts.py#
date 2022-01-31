@@ -19,7 +19,8 @@ boardgames_layout = html.Div([
         ],
     style=CONTENT_STYLE
     ),
-    html.Div(id='boardgame-display', style=CONTENT_STYLE),
+    html.Div(id='boardgame-display',
+             style=CONTENT_STYLE),
 ],
 )
 

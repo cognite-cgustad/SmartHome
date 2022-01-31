@@ -1,6 +1,6 @@
 import dash_table
 from dash import html
-from ..style import CONTENT_STYLE, COLUMNS
+from ..style import COLUMNS
 
 collection = html.Div([html.H2('Collection', style={'width': '50%', 'display': 'inline-block'}),
                        html.H2(id='all-num',
@@ -28,4 +28,4 @@ collection = html.Div([html.H2('Collection', style={'width': '50%', 'display': '
                            },
                            style_table={'height': 'auto', 'overflowY': 'auto'},
                            sort_action="native",
-                           sort_mode='multi',)], style=CONTENT_STYLE)
+                           sort_mode='multi',)])
