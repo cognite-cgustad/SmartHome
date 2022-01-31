@@ -1,0 +1,9 @@
+* Intro
+
+  The overall idea is to add multiple dash application to build a smart home
+
+** Boardgames
+   Port the existing code and put it into this application.
+
+*** Import data from bgg
+    Store each game data and link data for each user
