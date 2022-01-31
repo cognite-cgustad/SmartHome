@@ -13,3 +13,5 @@ CONTENT_STYLE = {
     "margin-right": "2rem",
     "padding": "2rem 1rem",
 }
+
+COLUMNS = ['Title', 'Designer(s)', 'Year published', 'Playercount', 'Average rating', 'Weight', 'Playing time']

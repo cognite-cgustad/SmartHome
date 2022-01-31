@@ -3,7 +3,7 @@ from dash import html
 from dash.dependencies import Input, Output
 
 from app import app
-# import apps.boardgames.layouts.layout as boardgames_layout
+from apps.boardgames.layouts import boardgames_layout
 from apps.homepage.layouts import homepage_layout
 
 
@@ -17,7 +17,7 @@ app.layout = html.Div([
               Input('url', 'pathname'))
 def display_page(pathname):
     if pathname == '/apps/boardgames/':
-        return None #boardgames_layout
+        return boardgames_layout
     else:
         return homepage_layout
 

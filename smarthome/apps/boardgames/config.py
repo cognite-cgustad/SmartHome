@@ -1,0 +1,1 @@
+DATAPATH = 'apps/boardgames/data/'

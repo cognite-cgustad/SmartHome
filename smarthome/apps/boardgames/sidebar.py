@@ -1,18 +1,19 @@
 from dash import html
 from dash import dcc
-from os import listdir, isfile, join
+from os import listdir
+from os.path import isfile, join
 from .style import SIDEBAR_STYLE
-
+from .config import DATAPATH
 # Load files from user folder
-mypath = './data/users/'
-USERS = [f for f in listdir(mypath) if isfile(join(mypath, f))]
+
+USERS = [f for f in listdir(DATAPATH) if isfile(join(DATAPATH, f))]
 
 
 user = html.Div([dcc.Dropdown(id='user-select',
                               options=USERS,
                               value=USERS[0])])
 
-search = dcc.Input(id='search',
+search = dcc.Input(id='game-search',
                    value='',
                    type='search',
                    placeholder="Search",
